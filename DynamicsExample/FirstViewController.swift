@@ -17,6 +17,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var testView: UIView!
     
     var animator: UIDynamicAnimator?
+    let gravity = UIGravityBehavior()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,13 +25,8 @@ class FirstViewController: UIViewController {
         // The animator needs a reference view that things animate relative to.
         // Use the superview
         animator = UIDynamicAnimator(referenceView: view)
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
         // Each Behavior as UIViews that can be attached to that behavior
-        let gravity = UIGravityBehavior()
         gravity.addItem(testView)
         
         // Change the direction of gravity
@@ -42,5 +38,4 @@ class FirstViewController: UIViewController {
         // Add the behaviors to the animator engine.
         animator?.addBehavior(gravity)
     }
-
 }

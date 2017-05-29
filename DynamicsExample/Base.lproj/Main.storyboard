@@ -46,7 +46,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8Y8-BN-vdE">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="445-Mh-GWl"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="445-Mh-GWl">
+                            <connections>
+                                <segue destination="Ocb-0S-GKe" kind="show" id="E8V-Kx-cb6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="testView" destination="p3m-fy-4rN" id="AA5-dS-fuc"/>
@@ -55,6 +59,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWO-9b-ld7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-471.19999999999999" y="200.14992503748127"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="QZa-wy-t8K">
+            <objects>
+                <viewController id="Ocb-0S-GKe" customClass="SecondViewController" customModule="DynamicsExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GQR-25-eU6"/>
+                        <viewControllerLayoutGuide type="bottom" id="H2d-8p-R5U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KsP-V7-TGx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ap-Xu-Qzp">
+                                <rect key="frame" x="105" y="131" width="64" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.7609552901519252" green="0.43641480880122818" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mQA-mf-zwF">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="e13-qq-k27"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="testView" destination="4ap-Xu-Qzp" id="bl4-7F-uUT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Am7-64-an5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245.59999999999999" y="199.25037481259372"/>
         </scene>
     </scenes>
 </document>
