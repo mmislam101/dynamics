@@ -31,6 +31,14 @@ class SecondViewController: UIViewController {
         wallBehavior.translatesReferenceBoundsIntoBoundary = true
         
         animator?.addBehavior(wallBehavior)
+
+        // Change the bounce coefficient
+//        let elasticBehavior = UIDynamicItemBehavior()
+//        elasticBehavior.addItem(testView)
+//        
+//        elasticBehavior.elasticity = 0.0
+//        
+//        animator?.addBehavior(elasticBehavior)
     }
 
 }
