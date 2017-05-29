@@ -34,6 +34,17 @@ class ThirdViewController: UIViewController {
         wallBehavior.translatesReferenceBoundsIntoBoundary = true
         
         animator?.addBehavior(wallBehavior)
+        
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction))
+        view.addGestureRecognizer(tapGesture)
     }
 
+    func tapAction() {
+        let pushBehavior = UIPushBehavior(items: [testView2], mode: UIPushBehaviorMode.instantaneous)
+        
+        pushBehavior.setAngle((7.0/12.0) * .pi, magnitude: 10.0)
+        
+        animator?.addBehavior(pushBehavior)
+    }
 }
