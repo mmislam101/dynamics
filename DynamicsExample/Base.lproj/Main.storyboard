@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-1202" y="209"/>
         </scene>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="qLg-5s-BXQ">
             <objects>
-                <viewController id="G1P-Jj-yl9" sceneMemberID="viewController">
+                <viewController id="G1P-Jj-yl9" customClass="FirstViewController" customModule="DynamicsExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gh6-7c-YVb"/>
                         <viewControllerLayoutGuide type="bottom" id="44M-qi-jXt"/>
@@ -48,6 +48,9 @@
                     <navigationItem key="navigationItem" id="8Y8-BN-vdE">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="445-Mh-GWl"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="testView" destination="p3m-fy-4rN" id="AA5-dS-fuc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWO-9b-ld7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
